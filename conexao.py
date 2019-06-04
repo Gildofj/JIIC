@@ -13,15 +13,4 @@ class MongoConnect():
         except Exception as e:
             print("problema ao salvar registro")
             print(json)
-            print(e)   
-
-    def find(self, json):
-        try:
-            cliente = MongoClient('localhost', 27017)
-            banco = cliente.aula_aberta
-            JIIC = banco.JIIC
-            arq_excel = JIIC.find_many(json)
-        except Exception as e:
-            print("problema ao encontrar o registro")
-            print(json)
-            print(e)  
+            print(e)
